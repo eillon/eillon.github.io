@@ -161,7 +161,7 @@ var myBot = new BotUI('hello-world');
           return myBot.message.add({
             delay: 1000,
             loading: true,
-            content: `i'm sorry! i don't love you because i love Yuer.`
+            content: `i'm sorry! i don't love you because i love ***.`
           })
 
           break;
@@ -169,7 +169,7 @@ var myBot = new BotUI('hello-world');
             return myBot.message.add({
               delay: 1000,
               loading: true,
-              content: `i don't love you too, because i love Yuer.`
+              content: `i don't love you too, because i love ***.`
             })
         default:
 
