@@ -11,6 +11,8 @@ tag: AngularJS
 
 这里的`AngularJS`指的是第一代，据说第二代`Angular2`比`AngularJS`有一个大跃进，有机会也想去了解一下。
 
+<!-- more -->
+
 首先，`AngularJS`是一套基于`MVC`结构的`JavaScript`开发框架，主要就是以`HTML`作为模板语言并进行扩展。它是一种框架，而不是类库(比如，`jQuery`通常意义来说就是`js`库)。特点是：
 
 * `MVVM`

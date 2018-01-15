@@ -16,6 +16,8 @@ tag: JavaScript
 - [`JS`函数式编程指南](https://llh911001.gitbooks.io/mostly-adequate-guide-chinese/content/)
 - [Mostly adequate guide to FP in JavaScript](https://github.com/MostlyAdequate/mostly-adequate-guide)
 
+<!-- more -->
+
 ## 相关概念
 
 ### 纯函数 -- Pure Functions
