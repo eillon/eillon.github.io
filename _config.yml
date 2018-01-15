@@ -9,8 +9,7 @@ baseurl: ""  #根目录
 description: 世事一场大梦，人生几度新凉。
 motto: 我们笑着说再见，却深知再见遥遥无期。
 #motto: 如果生活欺骗了你，不要悲伤，不要哭泣。
-banner: 
-我不知道能不能看到明天的朝阳，但我知道，今晚的夜色一定极美。
+banner:我不知道能不能看到明天的朝阳，但我知道，今晚的夜色一定极美。
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
 excerpt_separator:  '<!-- more -->' #文章摘要
