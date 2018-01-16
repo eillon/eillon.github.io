@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<title>Keyed collection</title>
+	<meta name="description" content="Eillon的个人博客、web、前端、javascript、css、html、H5、CSS3、web前端工程师、gulp、jekyll、git">
+	<meta name="keywords" content="web、前端、webapp、个人博客、技术博客、github博客、javascript、css、html、H5、CSS3、web前端工程师、gulp" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="author" contect="eillon, yezhenyu@qq.com">
+	<meta name="robots" content="index,follow">
+	<link rel="shortcut icon" href="/styles/images/favicon.png">
+	<link rel="icon" href="/styles/images/favicon.png">
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="canonical" href="http://localhost:4000">
+	<!--[if lte IE 9]>
+    	<script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+  	<![endif]-->
+	<!--[if lt IE 9]>
+    	<script>window.location.href='/upgrade-your-browser.html';</script>
+    <![endif]-->
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+  			var hm = document.createElement("script");
+  			hm.src = "https://hm.baidu.com/hm.js?40ab350f7c60a488b8e8093960c0faf2";
+  			var s = document.getElementsByTagName("script")[0]; 
+  			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+  <body class="index">
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">
+        <img src="/styles/images/logo.png" alt="Eillon的个人博客">
+      </a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li></li>
+        <li>
+          <a href="/">首页</a>
+        </li>
+        <li>
+          <a href="/categories/">博文分类</a>
+        </li>
+        <li>
+          <a href="/tag">标签目录</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a rel="nofollow" href="/aboutme">关于我</a></li> 
+        <li><a rel="nofollow" href="/talktome">TalkToMe</a></li>
+             
+        <!--
+        <li><a rel="nofollow" target="_blank" href="https://github.com/eillon/">关于我</a></li> 
+        -->
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="docs-header pa" id="content">
+    <canvas id="mycanvas">你的浏览器不支持canvas</canvas>
+    <div class="container" >
+  	
+        <!--
+		    <h1>Keyed collection</h1>
+		    <p>Post on Mar 14, 2017 by <a href="/about">Eillon</a></p>
+		-->
+        <h1>世事一场大梦，人生几度新凉。</h1>
+    
+  </div>
+</div>
+    
+      
+<div class="banner">
+  <div class="container lh30">
+  	
+    	<a href="/categories/#研究生涯-ref">研究生涯</a>	/
+    	<a href="/tag/#JavaScript-ref">JavaScript</a>
+    
+      <div id="search-container" class="pull-right">
+          <input type="text" id="search-input" placeholder=" 直接搜索...">
+          <label class="searchIcon glyphicon glyphicon-search" for="search-input"></label>
+          <ul id="results-container"></ul>
+      </div>
+  </div>
+</div>
+
+    
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>目录</h1>
+  <ul class="nav sidenav">
+<!--
+    
+      
+      
+      
+      
+
+      
+        <li><a href="#year_2018">2018</a>
+          <ul class="nav">
+            <li><a href="#month_2018_January">January</a></li>
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+        
+            </ul>
+          </li>
+          <li><a href="#year_2017">2017</a>
+            <ul class="nav">
+              <li><a href="#month_2017_June">June</a></li>
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+              <li><a href="#month_2017_April">April</a></li>
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+              <li><a href="#month_2017_March">March</a></li>
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+              <li><a href="#month_2017_January">January</a></li>
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            </ul>
+          </li>
+      
+    
+-->
+  </ul>
+</div> 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">Keyed collection</h1>
+              <!--
+                <p class="post-meta">Mar 14, 2017</p>
+              -->
+              <div class="meta">Date： <span class="postdate">Mar 14, 2017</span> Author： <a target="_blank" href="http://localhost:4000">Eillon</a></div>
+              <br />
+              <blockquote><p>本文章采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh"> 知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 </a>进行许可。转载请注明来自<a href="https://eillon.github.io">Eillon的博客</a></p></blockquote>
+            </header>
+            <article class="post-content">
+              <ul id="markdown-toc">
+  <li><a href="#maps--映射" id="markdown-toc-maps--映射">Maps – 映射</a>    <ul>
+      <li><a href="#map对象" id="markdown-toc-map对象">Map对象</a></li>
+      <li><a href="#object-和-map的比较" id="markdown-toc-object-和-map的比较">Object 和 Map的比较</a></li>
+      <li><a href="#weakmap对象" id="markdown-toc-weakmap对象">WeakMap对象</a></li>
+    </ul>
+  </li>
+  <li><a href="#sets--集合" id="markdown-toc-sets--集合">Sets – 集合</a>    <ul>
+      <li><a href="#set对象" id="markdown-toc-set对象">Set对象</a></li>
+      <li><a href="#array和set的转换" id="markdown-toc-array和set的转换">Array和Set的转换</a></li>
+      <li><a href="#array和set的对比" id="markdown-toc-array和set的对比">Array和Set的对比</a></li>
+      <li><a href="#weakset对象" id="markdown-toc-weakset对象">WeakSet对象</a></li>
+    </ul>
+  </li>
+  <li><a href="#map的键和set的值的等值判断" id="markdown-toc-map的键和set的值的等值判断">Map的键和Set的值的等值判断</a></li>
+</ul>
+
+<p><code class="highlighter-rouge">Map</code> and <code class="highlighter-rouge">Set</code> objects contain elements which are iterable in the order of insertion，是使用<code class="highlighter-rouge">Key</code>值来标记数据的集合。</p>
+
+<!-- more -->
+
+<h2 id="maps--映射">Maps – 映射</h2>
+
+<h3 id="map对象">Map对象</h3>
+
+<p><code class="highlighter-rouge">Map object</code>是在<code class="highlighter-rouge">ECMAScript 6</code>引入的。A <code class="highlighter-rouge">Map object</code> is a simple <strong>key/value</strong> map and can iterate its elements in insertion order。</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">Map</code>对象，就是简单的<strong>key/value</strong>映射</p>
+</blockquote>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">sayings</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Map</span><span class="p">();</span>    <span class="c1">//Map对象的创建</span>
+<span class="nx">sayings</span><span class="p">.</span><span class="kd">set</span><span class="p">(</span><span class="s1">'dog'</span><span class="p">,</span> <span class="s1">'woof'</span><span class="p">);</span> <span class="c1">//set(key, value)方法设置key/value</span>
+<span class="nx">sayings</span><span class="p">.</span><span class="kd">set</span><span class="p">(</span><span class="s1">'cat'</span><span class="p">,</span> <span class="s1">'meow'</span><span class="p">);</span>
+<span class="nx">sayings</span><span class="p">.</span><span class="kd">set</span><span class="p">(</span><span class="s1">'elephant'</span><span class="p">,</span> <span class="s1">'toot'</span><span class="p">);</span>
+<span class="nx">sayings</span><span class="p">.</span><span class="nx">size</span><span class="p">;</span>               <span class="c1">//属性size返回key/value的数量。此处返回3</span>
+<span class="nx">sayings</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s1">'fox'</span><span class="p">);</span>         <span class="c1">//get(key)方法返回键对应的值，如果不存在，返回undefined。此处返回undefined</span>
+<span class="nx">sayings</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="s1">'bird'</span><span class="p">);</span>        <span class="c1">//has(key)判断是否包含键对应的值，返回布尔值。此处返回false</span>
+<span class="nx">sayings</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="s1">'dog'</span><span class="p">);</span>      <span class="c1">//delete(key)移除任何与键相关的值</span>
+<span class="nx">sayings</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="s1">'dog'</span><span class="p">);</span>         <span class="c1">// false</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="p">[</span><span class="nx">key</span><span class="p">,</span> <span class="nx">value</span><span class="p">]</span> <span class="k">of</span> <span class="nx">sayings</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">key</span> <span class="o">+</span> <span class="s1">' goes '</span> <span class="o">+</span> <span class="nx">value</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="c1">// "cat goes meow"</span>
+<span class="c1">// "elephant goes toot"</span>
+
+<span class="nx">sayings</span><span class="p">.</span><span class="nx">clear</span><span class="p">();</span>            <span class="c1">//clear()方法移除所有的key/value</span>
+<span class="nx">sayings</span><span class="p">.</span><span class="nx">size</span><span class="p">;</span>               <span class="c1">// 0</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>我们可以使用<code class="highlighter-rouge">for...of</code>循环得到所有的<code class="highlighter-rouge">[key, value]</code>。也可以使用<code class="highlighter-rouge">forEach()</code>方法迭代。</p>
+</blockquote>
+
+<h3 id="object-和-map的比较">Object 和 Map的比较</h3>
+
+<p>一般地，<code class="highlighter-rouge">objects</code>会被用于将<strong>字符串类型</strong>映射到数值。<code class="highlighter-rouge">Object</code>允许设置键值对、根据键获取值、删除键、检测某个键是否存在。而<code class="highlighter-rouge">Map</code>具有更多的优势。</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Object</code>的键均为<code class="highlighter-rouge">Strings</code>类型或<code class="highlighter-rouge">Symbol</code>类型，在<code class="highlighter-rouge">Map</code>里键可以是任意类型</li>
+  <li>必须手动计算<code class="highlighter-rouge">Object</code>的尺寸，但是可以很容易地获取使用<code class="highlighter-rouge">Map</code>的尺寸</li>
+  <li><code class="highlighter-rouge">Ma</code>p的遍历遵循元素的插入顺序</li>
+  <li><code class="highlighter-rouge">Object</code>有原型，所以映射中有一些缺省的键。可以理解为<code class="highlighter-rouge">map = Object.create(null)</code></li>
+</ul>
+
+<p>这两条提示可以帮你决定是使用<code class="highlighter-rouge">Map</code>还是<code class="highlighter-rouge">Object</code>：</p>
+
+<ul>
+  <li>如果键在运行时才能知道，或者所有的键类型相同，所有的值类型相同，那就使用<code class="highlighter-rouge">Object</code></li>
+  <li>如果需要对个别元素进行操作，使用<code class="highlighter-rouge">Object</code></li>
+</ul>
+
+<h3 id="weakmap对象">WeakMap对象</h3>
+
+<p><code class="highlighter-rouge">WeakMap</code>对象也是键值对的集合。它的键必须是<strong>对象类型</strong>，值可以是任意类型。它的键被弱保持，也就是说，当其键所指对象没有其他地方引用的时候，它会被<code class="highlighter-rouge">GC</code>(垃圾回收器)回收掉。</p>
+
+<p>与<code class="highlighter-rouge">Map</code>对象不同的是，<code class="highlighter-rouge">WeakMap</code>的键是不可枚举的。不提供列出其键的方法。列表是否存在取决于垃圾回收器的状态，是不可预知的。</p>
+
+<h2 id="sets--集合">Sets – 集合</h2>
+
+<h3 id="set对象">Set对象</h3>
+
+<p><code class="highlighter-rouge">Set</code>对象是一组值的集合，这些值是<strong>不重复的</strong>，可以按照添加顺序来遍历。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">mySet</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Set</span><span class="p">();</span>
+<span class="nx">mySet</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="nx">mySet</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">'some text'</span><span class="p">);</span>
+<span class="nx">mySet</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">'foo'</span><span class="p">);</span>
+
+<span class="nx">mySet</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span> <span class="c1">// true</span>
+<span class="nx">mySet</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="s1">'foo'</span><span class="p">);</span>
+<span class="nx">mySet</span><span class="p">.</span><span class="nx">size</span><span class="p">;</span> <span class="c1">// 2</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">item</span> <span class="k">of</span> <span class="nx">mySet</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">item</span><span class="p">);</span>
+<span class="c1">// 1</span>
+<span class="c1">// "some text"</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>可以使用<code class="highlighter-rouge">for...of</code>进行迭代</p>
+</blockquote>
+
+<h3 id="array和set的转换">Array和Set的转换</h3>
+
+<p>可以使用<code class="highlighter-rouge">Array.from</code>或<code class="highlighter-rouge">扩充操作符</code>来完成<strong>集合到数组的转换</strong>。同样，集合的构造器接受数组作为参数，可以完成从数组到集合的转换。需要重申的是，集合对象中的值不重复，所以数组转换为集合时，所有重复值将会被删除。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">myArray</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"value1"</span><span class="p">,</span> <span class="s2">"value2"</span><span class="p">,</span> <span class="s2">"value3"</span><span class="p">];</span>
+
+<span class="c1">// 用Set构造器将Array转换为Set</span>
+<span class="kd">var</span> <span class="nx">mySet</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Set</span><span class="p">(</span><span class="nx">myArray</span><span class="p">);</span>
+
+<span class="nx">mySet</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="s2">"value1"</span><span class="p">);</span> <span class="c1">// returns true</span>
+
+<span class="c1">// 用...(展开操作符)操作符将Set转换为Array</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([...</span><span class="nx">mySet</span><span class="p">]);</span> <span class="c1">// 与myArray完全一致</span>
+
+<span class="c1">//or</span>
+<span class="nb">Array</span><span class="p">.</span><span class="k">from</span><span class="p">(</span><span class="nx">mySet</span><span class="p">);</span>
+
+</code></pre></div></div>
+
+<h3 id="array和set的对比">Array和Set的对比</h3>
+
+<p>一般情况下，在<code class="highlighter-rouge">JavaScript</code>中使用数组来存储一组元素，而新的集合对象有这些优势：</p>
+
+<ul>
+  <li>数组中用于判断元素是否存在的<code class="highlighter-rouge">indexOf</code>函数效率低下</li>
+  <li>集合对象允许根据值删除元素，而数组中必须使用基于下标的<code class="highlighter-rouge">splice</code>方法</li>
+  <li>数组的<code class="highlighter-rouge">indexOf</code>方法无法找到<code class="highlighter-rouge">NaN</code>值</li>
+  <li>集合对象存储不重复的值，所以不需要手动处理包含重复值的情况</li>
+</ul>
+
+<h3 id="weakset对象">WeakSet对象</h3>
+
+<p><code class="highlighter-rouge">WeakSet</code>对象是一组对象的集合。<code class="highlighter-rouge">WeakSet</code>中的对象不重复且不可枚举。</p>
+
+<p><code class="highlighter-rouge">WeakSets</code>中的值必须是对象类型，不可以是别的类型。</p>
+
+<h2 id="map的键和set的值的等值判断">Map的键和Set的值的等值判断</h2>
+
+<ul>
+  <li>判断使用与<code class="highlighter-rouge">===</code>相似的规则</li>
+  <li><code class="highlighter-rouge">-0</code>和<code class="highlighter-rouge">+0</code>相等</li>
+  <li><code class="highlighter-rouge">NaN</code>与自身相等（与<code class="highlighter-rouge">===</code>有所不同）</li>
+</ul>
+
+
+            </article>
+          <hr>
+          <blockquote><p>对于本文内容有问题或建议的小伙伴，欢迎在文章底部留言交流讨论。</p></blockquote>
+          <!--
+		  <div class="text-center">
+            <a href="/donate/" target="_blank" style="text-decoration: none"><button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-usd" aria-hidden="true"></span> 您的支持是将是我写作最大的动力!</button></a>
+          </div>
+		  -->
+        </div>
+      </div>
+      <!--comment-->
+      <!--code for 网易云跟帖
+      <div class="panel docs-content">
+        <article class="post-content">
+          <div class="wrapper">
+            <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+            <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+            <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+            <script>
+            var cloudTieConfig = {
+            url: document.location.href, 
+            sourceId: "",
+            productKey: "b6d55f09637f497389b80bafc11aada1",
+            target: "cloud-tie-wrapper"
+            };
+            var yunManualLoad = true;
+            Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
+            </script>
+          </div>
+        </article>
+      </div> -->
+      <!--Gitment-->
+	    <div id="container"></div>
+      <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+      <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+      <script>
+        var gitment = new Gitment({
+          id: window.location.pathname, 
+          owner: 'eillon',
+          repo: 'eillon.github.io',
+          oauth: {
+          client_id: 'b7fa76731a0b82a335fe',
+          client_secret: '606b263e5b014bd3df4ced321c998977133bb2b3',
+          },
+        })
+        gitment.render('container')
+      </script>
+    </div>
+  </div>
+</div>
+
+
+    <footer class="footer" role="contentinfo">
+	<!--不蒜子pv/uv统计-->
+	<div class="post-meta">
+            <p>Total <span id="busuanzi_value_site_pv"></span> views，您是本站的第<span id="busuanzi_value_site_uv"></span>个访问者，<span id="busuanzi_value_page_pv"></span> Hits</p><br/>
+    </div>
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2018 <a href="https://github.com/eillon/" target="_blank"><code>Eillon</code></a>. All rights reserved. </p>
+		<p>Powered by <a href="https://jekyllrb.com" target="_blank">Jekyll</a>， Data by <a href="https://tongji.baidu.com/web/23811489/overview/index" target="_blank">Bai Du</a>.</p>
+	</div>
+	<ul id="gotop"><li><span>TOP</span></li></ul>
+</footer>
+<script src="https://apps.bdimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="/styles/js/function.min.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+<script src="/styles/js/application.min.js"></script>
+  </body>
+</html>
