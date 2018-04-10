@@ -2,7 +2,7 @@ var myBot = new BotUI('hello-world');
 
     myBot.message.add({ // show a message
       delay: 200,
-      content: 'Hello, my name is timi.'
+      content: 'Hello, my name is eillon.'
     }).then (function (){
       myBot.message.add({
         delay: 1000,
@@ -57,8 +57,8 @@ var myBot = new BotUI('hello-world');
           return myBot.message.add ({
           delay: 1000,
           loading: true,
-          content: `Go ahead, try [my website](http://xiaokedada.com) or <a href="mailto:maoxiaoke@outlook.com">Email me.</a> </br>
-                    Here is my [Github address](https://github.com/maoxiaoke).`
+          content: `Go ahead, try [my website](http://eillon.github.io) or <a href="mailto:1377437556@qq.com">Email me.</a> </br>
+                    Here is my [Github address](https://github.com/eillon).`
         });
         break;/*
         case 'your hobbies':
@@ -116,8 +116,8 @@ var myBot = new BotUI('hello-world');
                return myBot.message.add ({
                delay: 1000,
                loading: true,
-               content: `Go ahead, try [my website](http://xiaokedada.com) or <a href="mailto:maoxiaoke@outlook.com">Email me.</a> </br>
-                         Here is my [Github address](https://github.com/maoxiaoke).`
+               content: `Go ahead, try [my website](http://eillon.github.io) or <a href="mailto:1377437556@qq.com">Email me.</a> </br>
+               Here is my [Github address](https://github.com/eillon).`
              });
              break;/*
              case 'your hobbies':
@@ -130,47 +130,6 @@ var myBot = new BotUI('hello-world');
            }
          })
           break;
-        default:
-
-      }
-    }).then(function(){
-      return myBot.message.add({
-        delay: 1000,
-        loading: true,
-        content: `ok, the last question...`
-      })
-    }).then(function(){
-      return myBot.message.add({
-        delay: 1000,
-        loading: true,
-        content: `Do you love me?`
-      })
-    }).then(function(){
-      return myBot.action.button({
-        action:[{
-          text: 'YES',
-          value: 'yes'
-        }, {
-          text: 'NO',
-          value: 'no'
-        }]
-      })
-    }).then(function(res){
-      switch (res.value) {
-        case 'yes':
-          return myBot.message.add({
-            delay: 1000,
-            loading: true,
-            content: `i'm sorry! i don't love you because i love ***.`
-          })
-
-          break;
-          case 'no':
-            return myBot.message.add({
-              delay: 1000,
-              loading: true,
-              content: `i don't love you too, because i love ***.`
-            })
         default:
 
       }
@@ -190,7 +149,7 @@ var myBot = new BotUI('hello-world');
       return myBot.message.add({
         delay: 1000,
         loading: true,
-        content: 'Well, i fooled you. I will keep it myself'
+        content: 'Well, i fooled you. I will keep it myself.'
       })
     }).then(function(){
       return myBot.message.add({
