@@ -20,16 +20,23 @@
 * 文章首部字段：
 ```markdown
 ---
-layout: post                          # 使用模板
-title: name                           # 文章名，可与文件名不一致
+layout: post                                 # 使用模板,有post和original两种格式
+title: name:string                           # 文章名，可与文件名不一致
 date: 2017-03-23 09:00:00 +0800
-categories:                           # 博文分类
-tag:                                  # 标签
+categories: string                           # 博文分类
+tag:  string                                 # 标签
 ---
 * content
 {:toc}
 ```
-* 文章内容： 首部字段中的title会显示在网页中，所以正文中就不要重复了。
+如果使用多标签，可以用：
+```
+tags: [string, string]
+```
+
+* 文章内容： 
+1. 首部字段中的title会显示在网页中，所以正文中就不要重复了。
+2. 使用`<!-- more -->`字段来切分简介和文章内容。 简介部分会显示在主页上。
 
 ### 编译运行
 ```bash
@@ -37,3 +44,7 @@ jekyll s
 ```
 该命令开启jekyll服务器，会监听文件更改并自动更新网页。
 网页地址：`http://127.0.0.1:4000/`
+
+
+### 上传github
+其实上一步完全可以略过，更改完毕后直接上传到github，github会自动帮你编译、发布。
