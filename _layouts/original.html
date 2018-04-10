@@ -25,18 +25,25 @@ layout: default
             </article>
           <hr>
           <blockquote><p>对于本文内容有问题或建议的小伙伴，欢迎在文章底部留言交流讨论。</p></blockquote>
-          <div class="text-center">
-            <a href="{{ '/donate/' | prepend: site.baseurl }}" target="_blank" style="text-decoration: none"><button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-usd" aria-hidden="true"></span> 您的支持是将是我写作最大的动力!</button></a>
-          </div>
+          
         </div>
       </div>
-      <div class="panel docs-content">
-        <article class="post-content">
-          <div class="wrapper">
-            {% include LessOrMore/comments %} 
-          </div>
-        </article>
-      </div>
+      <!--Gitment-->
+	    <div id="container"></div>
+      <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+      <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+      <script>
+        var gitment = new Gitment({
+          id: window.location.pathname, 
+          owner: 'eillon',
+          repo: 'eillon.github.io',
+          oauth: {
+          client_id: 'b7fa76731a0b82a335fe',
+          client_secret: '606b263e5b014bd3df4ced321c998977133bb2b3',
+          },
+        })
+        gitment.render('container')
+      </script>
     </div>
   </div>
 </div>
