@@ -21,6 +21,8 @@ exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 github_username: eillon
 highlighter: rouge
 markdown: kramdown
+kramdown:
+  input: GFM
 FB:
   comments :
     provider : disqus
