@@ -10,7 +10,8 @@ tag: 数据库
 
 
 
-本文转自[MongoDB 和 mySql 的关系](http://www.cnblogs.com/syomm/p/5760441.html), 我是一个勤勉的搬运工。
+> 本文转自[MongoDB 和 mySql 的关系](http://www.cnblogs.com/syomm/p/5760441.html)
+<br/> 我是一个勤勉的搬运工。
 
 <!-- more -->
 
