@@ -14,6 +14,8 @@ tag: 数据库
 
 <!-- more -->
 
+## MYSQL和MongoDB命令对比：
+
 | 作用  | MYSQL  | MongoDB  |
 |:----|:-----|:------  |
 |服务器守护进程|mysqld|mongod|
