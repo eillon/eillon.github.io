@@ -25,6 +25,7 @@ tag: 数据库
 |逻辑还原工具|mysql|mongorestore|
 |数据导出工具|mysqldump|mongoexport|
 |数据导入工具|source|mongoimport|
+|进入服务|mysql -u username -p |暂未知 |
 |显示库列表|show databases;|show dbs|
 |进去库|use dbname;|use dbname|
 |显示表列表|show tables;|show collections|
