@@ -59,12 +59,12 @@
 }(jQuery)
 //搜索
 SimpleJekyllSearch({
-    searchInput: document.getElementById('search-input'),
+    searchInput: document.getElementById('search-input').toLowerCase(),
     resultsContainer: document.getElementById('results-container'),
     json: '/search.json',
     searchResultTemplate: '<li><a href="{url}">. {title}</a></li>',
-    noResultsText: '',
-    limit: 5,
+    noResultsText: '没有相关文章',
+    limit: 9,
     fuzzy: true,
     exclude: ['Welcome']
 });
