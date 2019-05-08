@@ -53,7 +53,8 @@ layout: default
           </div>
         </article>
       </div> -->
-      <!--Gitment-->
+
+      <!--code for Gitment
 	    <div id="container"></div>
       <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
       <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
@@ -68,7 +69,26 @@ layout: default
           },
         })
         gitment.render('container')
+      </script> -->
+
+      <!--code for Valine-->
+      <!--Leancloud 操作库:-->
+      <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+      <!--Valine 的核心代码库:-->
+      <script src="//unpkg.com/valine@1.3.6/dist/Valine.min.js"></script>
+      <div class="comment"></div>
+      <script>
+        new Valine({
+            av: AV, 
+            el: '.comment',  
+            app_id: 'Fca9AXJt4uGGTQurHs4xIrNC-gzGzoHsz', // 这里填写上面得到的APP ID
+            app_key: 'iuHD3VvVhoSBqcpJ6OQ2dl9I', // 这里填写上面得到的APP KEY
+            placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!' // [v1.0.7 new]留言框占位提示文字
+        });
       </script>
+
+
+
     </div>
   </div>
 </div>

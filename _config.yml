@@ -28,3 +28,10 @@ FB:
     provider : disqus
     disqus :
         short_name : eillon
+
+
+valine_comment:
+  enable: true
+  leancloud_appid: 
+  leancloud_appkey: 
+  placeholder: comment here
