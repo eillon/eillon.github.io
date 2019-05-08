@@ -28,22 +28,9 @@ layout: default
           
         </div>
       </div>
-      <!--Gitment-->
-	    <div id="container"></div>
-      <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-      <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-      <script>
-        var gitment = new Gitment({
-          id: window.location.pathname, 
-          owner: 'eillon',
-          repo: 'eillon.github.io',
-          oauth: {
-          client_id: 'b7fa76731a0b82a335fe',
-          client_secret: '606b263e5b014bd3df4ced321c998977133bb2b3',
-          },
-        })
-        gitment.render('container')
-      </script>
+      
+      {% include comment.html %}
+
     </div>
   </div>
 </div>

@@ -32,6 +32,6 @@ FB:
 
 valine_comment:
   enable: true
-  leancloud_appid: 
-  leancloud_appkey: 
-  placeholder: comment here
+  appid: 4BpeJ0Xp1FECq0MLvgTgmGE2-gzGzoHsz
+  appkey: QPOQ7MPS7r7KbT8AU3L3ourI
+  placeholder: comment here(support Markdown)
