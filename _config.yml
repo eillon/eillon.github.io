@@ -27,6 +27,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - 'README.md'
 
 # Writing
 new_post_name: :year-:month-:day-:title.md # File name of new posts
@@ -94,3 +95,6 @@ symbols_count_time:
  # 网页底部是否显示
   total_symbols: true
   total_time: true
+
+baidusitemap:
+    path: baidusitemap.xml

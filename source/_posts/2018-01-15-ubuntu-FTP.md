@@ -5,12 +5,8 @@ date: 2018-01-15 23:00:00 +0800
 categories: 实用技术
 tag: FTP 
 ---
-* content
-{:toc}
 
-
-
->实验环境： ubuntu 16.04 LTS 64位。 简单可行，用时大概15分钟。
+实验环境： ubuntu 16.04 LTS 64位。 简单可行，用时大概15分钟。
 
 <!-- more -->
 
