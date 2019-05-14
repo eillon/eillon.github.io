@@ -97,7 +97,7 @@
 <meta name="google-site-verification" content="vYBR_YbPXtPqEn5xkppDOcGuxc7b0V4YbT4VyjDqkWA">
 
   <meta name="description" content="content{:toc}   一本介绍Linux内核技术方面的书籍。讲的很细，读起来很爽。以下只是机械性的摘录，读完某阶段后再单独总结。">
-<meta name="keywords" content="持续更新,摘录,技术书籍">
+<meta name="keywords" content="摘录,持续更新,技术书籍">
 <meta property="og:type" content="article">
 <meta property="og:title" content="读书笔记：深入Linux内核架构">
 <meta property="og:url" content="https://eillon.github.io/2018/09/25/读书笔记-深入Linux内核架构/index.html">
@@ -400,7 +400,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">读书笔记：深入Linux内核架构<a href="https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name_posts/2018-09-25-读书笔记-深入Linux内核架构.md" class="post-edit-link" title="编辑" rel="noopener" target="_blank"><i class="fa fa-pencil"></i></a>
+          <h2 class="post-title" itemprop="name headline">读书笔记：深入Linux内核架构
 
               
             
@@ -655,6 +655,13 @@
     <li class="popular-posts-item">
       
       
+      <div class="popular-posts-title"><a href="/2018/06/05/摘录一/" rel="bookmark">摘录·一</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
       <div class="popular-posts-title"><a href="/2018/07/07/摘录二/" rel="bookmark">摘录·二</a></div>
       
     </li>
@@ -663,13 +670,6 @@
       
       
       <div class="popular-posts-title"><a href="/2018/09/17/摘录三/" rel="bookmark">摘录·三</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
-      
-      <div class="popular-posts-title"><a href="/2018/09/26/男人来自火星女人来自金星/" rel="bookmark">读书笔记：《男人来自火星，女人来自金星》</a></div>
       
     </li>
   
@@ -709,9 +709,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/持续更新/" rel="tag"># 持续更新</a>
-          
             <a href="/tags/摘录/" rel="tag"># 摘录</a>
+          
+            <a href="/tags/持续更新/" rel="tag"># 持续更新</a>
           
             <a href="/tags/技术书籍/" rel="tag"># 技术书籍</a>
           
@@ -1197,6 +1197,15 @@
   
 
   
+  
+  
+
+  
+
+  
+  
+  
+
 
   
   
@@ -1632,8 +1641,41 @@
   
 
   
+  
 
   
+  
+
+  
+
+
+  
+<script>
+if ($('body').find('div.pdf').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      $('body').find('div.pdf').each(function(i, o) {
+        PDFObject.embed($(o).attr('target'), $(o), {
+          pdfOpenParams: {
+            navpanes: 0,
+            toolbar: 0,
+            statusbar: 0,
+            pagemode: 'thumbs',
+            view: 'FitH'
+          },
+          PDFJS_URL: '/lib/pdf/web/viewer.html',
+          height: $(o).attr('height') || '500px'
+        });
+      });
+    },
+  });
+}
+</script>
+
 
   
 
@@ -1656,6 +1698,11 @@
   
 
   
+  
+  
+  <script src="/lib/pangu/dist/pangu.min.js?v=3.3"></script>
+  <script>pangu.spacingPage();</script>
+
 
   
   

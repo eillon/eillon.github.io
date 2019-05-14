@@ -97,7 +97,7 @@
 <meta name="google-site-verification" content="vYBR_YbPXtPqEn5xkppDOcGuxc7b0V4YbT4VyjDqkWA">
 
   <meta name="description" content="content{:toc}    Hadoop分布式系统常用的操作，整理如下。">
-<meta name="keywords" content="Hadoop,持续更新">
+<meta name="keywords" content="持续更新,Hadoop">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hadoop常用操作">
 <meta property="og:url" content="https://eillon.github.io/2018/05/06/hadoop常用操作/index.html">
@@ -400,7 +400,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Hadoop常用操作<a href="https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name_posts/2018-04-16-hadoop常用操作.md" class="post-edit-link" title="编辑" rel="noopener" target="_blank"><i class="fa fa-pencil"></i></a>
+          <h2 class="post-title" itemprop="name headline">Hadoop常用操作
 
               
             
@@ -572,7 +572,7 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/2018/05/06/hadoop搭建/" rel="bookmark">Hadoop分布式系统搭建流程</a></div>
+      <div class="popular-posts-title"><a href="/2018/06/05/摘录一/" rel="bookmark">摘录·一</a></div>
       
     </li>
   
@@ -600,7 +600,7 @@
     <li class="popular-posts-item">
       
       
-      <div class="popular-posts-title"><a href="/2018/07/18/wireshark-filter/" rel="bookmark">wireshark 常用过滤命令</a></div>
+      <div class="popular-posts-title"><a href="/2018/07/16/linux常用命令/" rel="bookmark">Linux常用指令</a></div>
       
     </li>
   
@@ -626,9 +626,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hadoop/" rel="tag"># Hadoop</a>
-          
             <a href="/tags/持续更新/" rel="tag"># 持续更新</a>
+          
+            <a href="/tags/Hadoop/" rel="tag"># Hadoop</a>
           
         </div>
       
@@ -1112,6 +1112,15 @@
   
 
   
+  
+  
+
+  
+
+  
+  
+  
+
 
   
   
@@ -1547,8 +1556,41 @@
   
 
   
+  
 
   
+  
+
+  
+
+
+  
+<script>
+if ($('body').find('div.pdf').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      $('body').find('div.pdf').each(function(i, o) {
+        PDFObject.embed($(o).attr('target'), $(o), {
+          pdfOpenParams: {
+            navpanes: 0,
+            toolbar: 0,
+            statusbar: 0,
+            pagemode: 'thumbs',
+            view: 'FitH'
+          },
+          PDFJS_URL: '/lib/pdf/web/viewer.html',
+          height: $(o).attr('height') || '500px'
+        });
+      });
+    },
+  });
+}
+</script>
+
 
   
 
@@ -1571,6 +1613,11 @@
   
 
   
+  
+  
+  <script src="/lib/pangu/dist/pangu.min.js?v=3.3"></script>
+  <script>pangu.spacingPage();</script>
+
 
   
   

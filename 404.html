@@ -102,12 +102,10 @@
 <meta property="og:url" content="https://eillon.github.io/404.html">
 <meta property="og:site_name" content="Eillon的博客">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-13T16:03:57.499Z">
+<meta property="og:updated_time" content="2019-05-14T05:59:06.274Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="404">
 
-
-  
 
 
   <link rel="alternate" href="/atom.xml" title="Eillon的博客" type="application/atom+xml">
@@ -395,7 +393,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h2 class="post-title" itemprop="name headline">404<a href="https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name404/index.md" class="post-edit-link" title="编辑" rel="noopener" target="_blank"><i class="fa fa-pencil"></i></a>
+<h2 class="post-title" itemprop="name headline">404
 
 </h2>
 
@@ -847,6 +845,15 @@
   
 
   
+  
+  
+
+  
+
+  
+  
+  
+
 
   
   
@@ -1282,8 +1289,41 @@
   
 
   
+  
 
   
+  
+
+  
+
+
+  
+<script>
+if ($('body').find('div.pdf').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      $('body').find('div.pdf').each(function(i, o) {
+        PDFObject.embed($(o).attr('target'), $(o), {
+          pdfOpenParams: {
+            navpanes: 0,
+            toolbar: 0,
+            statusbar: 0,
+            pagemode: 'thumbs',
+            view: 'FitH'
+          },
+          PDFJS_URL: '/lib/pdf/web/viewer.html',
+          height: $(o).attr('height') || '500px'
+        });
+      });
+    },
+  });
+}
+</script>
+
 
   
 
@@ -1306,6 +1346,11 @@
   
 
   
+  
+  
+  <script src="/lib/pangu/dist/pangu.min.js?v=3.3"></script>
+  <script>pangu.spacingPage();</script>
+
 
   
   
