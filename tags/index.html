@@ -52,10 +52,10 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.1">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png?v=7.1.1">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png?v=7.1.1">
 
 
   <link rel="mask-icon" href="/images/logo.svg?v=7.1.1" color="#222">
@@ -74,7 +74,7 @@
     version: '7.1.1',
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
     back2top: true,
-    back2top_sidebar: false,
+    back2top_sidebar: true,
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -192,7 +192,7 @@
     </div>
     
       
-        <p class="site-subtitle">技术博客 && 生活记录</p>
+        <h1 class="site-subtitle" itemprop="description">技术博客 && 生活记录</h1>
       
     
     
@@ -396,9 +396,9 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">标签页
+<h2 class="post-title" itemprop="name headline">标签页<a href="https://github.com/user-name/repo-name/tree/branch-name/subdirectory-nametags/index.md" class="post-edit-link" title="编辑" rel="noopener" target="_blank"><i class="fa fa-pencil"></i></a>
 
-</h1>
+</h2>
 
 <div class="post-meta">
   
@@ -638,7 +638,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/uploads/styles/me.jpg" alt="Eillon">
+              <img class="site-author-image" itemprop="image" src="/images/me.jpg" alt="Eillon">
             
               <p class="site-author-name" itemprop="name">Eillon</p>
               <div class="site-description motion-element" itemprop="description">每个人都是一条欲望之河，深浅不一而已，不经历一遭，定欲壑难平。</div>
@@ -850,6 +850,13 @@
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
@@ -914,11 +921,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
@@ -1009,6 +1011,9 @@
 
 
   
+  <script src="/js/js.cookie.js?v=7.1.1"></script>
+  <script src="/js/scroll-cookie.js?v=7.1.1"></script>
+
 
   
 
