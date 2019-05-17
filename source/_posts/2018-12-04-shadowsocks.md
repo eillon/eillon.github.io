@@ -5,13 +5,12 @@ date: 2018-12-04 10:00:00 +0800
 categories: 实用技术
 tags: [ubuntu, shadowsocks]
 ---
-* content
-{:toc}
+很久之前装过一次shadowsocks，最近又搞了个服务器重装。但是发现网上的教程都已经很老旧了，有些步骤是重复的、无意义的。特此整理了本篇教程。
+{% blockquote info %}
+安装环境：Ubuntu16.04（linux-kernel 4.9+）
+整理日期：2018年12月4日
+{% endblockquote %}
 
-
-> 很久之前装过一次shadowsocks，最近又搞了个服务器重装。但是发现网上的教程都已经很老旧了，有些步骤是重复的、无意义的。特此整理了本篇教程。<br/>
-> 安装环境：Ubuntu16.04（linux-kernel 4.9+）<br/>
-> 整理日期：2018年12月4日
 
 <!-- more -->
 

@@ -4,11 +4,9 @@ title: "Latex 符号汇总"
 date: 2018-12-30 10:00:00 +0800 
 categories: 实用技术
 tags: [latex]
+mathjax: true
 ---
-* content
-{:toc}
-
-> 本文转载自[Latex各种命令符号 - CSDN博客](https://blog.csdn.net/garfielder007/article/details/51646604)
+本文转载自[Latex各种命令符号 - CSDN博客](https://blog.csdn.net/garfielder007/article/details/51646604)
 
 <!-- more -->
 ### 上标
